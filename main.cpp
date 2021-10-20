@@ -134,7 +134,7 @@ int main(int argc, char** argv){
              write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
-            cout<<"int avec des list"<<endl;
+            cout<<"on travaille avec list int "<<endl;
             list<int> temp;
             write(vect,argv[1],temp);
         }
@@ -147,70 +147,87 @@ int main(int argc, char** argv){
             write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='d'){
+            cout<< "on travaille avec deque unsigned int  "<<endl;
              deque <unsigned int> temp; 
              write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
-            cout<<"Pb avec les lists pour le moment"<<endl;
+            cout<< "on travaille avec deque unsigned int  "<<endl;
+            list <unsigned int> temp; 
+            write(vect,argv[1],temp);
         }
     }
 
     // cas float 
     else if (vect[0][0]=='f'){
         if (vect[1][0]=='v'){
+            cout<< "on travaille avec vector float  "<<endl;
             vector<float> temp;
             write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='d'){
+            cout<< "on travaille avec deque float  "<<endl;
              deque <float> temp; 
              write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
-            cout<<"Pb avec les lists pour le moment"<<endl;
+             cout<< "on travaille avec list float  "<<endl;
+            list < float > temp; 
+            write(vect,argv[1],temp);
         }
     }
     // cas double 
     else if (vect[0][0]=='d'){
         if (vect[1][0]=='v'){
+            cout<< "on travaille avec vector double  "<<endl;
             vector<double> temp;
             write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='d'){
+             cout<< "on travaille avec deque double  "<<endl;
              deque <double> temp; 
              write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
-            cout<<"Pb avec les lists pour le moment"<<endl;
+            cout<< "on travaille avec list double  "<<endl;
+            list <double> temp; 
+            write(vect,argv[1],temp);
         }
     }
     // cas char 
-    else if (vect[0][0]=='d'){
+    else if (vect[0][0]=='c'){
         if (vect[1][0]=='v'){
+            cout<< "on travaille avec vector char  "<<endl;
             vector<char> temp;
             write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
+            cout<< "on travaille avec deque char  "<<endl;
              deque <char> temp; 
              write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
-            cout<<"Pb avec les lists pour le moment"<<endl;
+            cout<< "on travaille avec list char  "<<endl;
+            list<char> temp; 
+            write(vect,argv[1],temp);
         }
     }
     // cas string
     else if (vect[0][0]=='s'){
         if (vect[1][0]=='v'){
-            cout<<"str avec vector"<<endl;
+            cout<< "on travaille avec vector string  "<<endl;
             vector<string> temp;
             write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='d'){
-            cout<<"str avec deque"<<endl;
+            cout<< "on travaille avec deque string  "<<endl;
              deque <string> temp; 
              write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
-            cout<<"Pb avec les lists pour le moment"<<endl;
+            cout<< "on travaille avec list string  "<<endl;
+            list<string> temp;
+            write(vect,argv[1],temp);
         }
     }
     else{

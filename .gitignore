@@ -3,3 +3,5 @@
 build
 result.txt 
 *.zip 
+a.out
+temp.cpp 
