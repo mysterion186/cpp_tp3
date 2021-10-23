@@ -201,7 +201,7 @@ int main(int argc, char** argv){
             vector<char> temp;
             write(vect,argv[1],temp);
         }
-        else if (vect[1][0]=='l'){
+        else if (vect[1][0]=='d'){
             cout<< "on travaille avec deque char  "<<endl;
              deque <char> temp; 
              write(vect,argv[1],temp);
