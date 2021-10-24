@@ -138,6 +138,9 @@ int main(int argc, char** argv){
             list<int> temp;
             write(vect,argv[1],temp);
         }
+        else {
+            cout<< "Le type de conteneurs est inconnu, pas de tri possible"<<endl;
+        }
     }
     // cas entier non signé 
     else if (vect[0][0]=='u'){
@@ -152,9 +155,12 @@ int main(int argc, char** argv){
              write(vect,argv[1],temp);
         }
         else if (vect[1][0]=='l'){
-            cout<< "on travaille avec deque unsigned int  "<<endl;
+            cout<< "on travaille avec list unsigned int  "<<endl;
             list <unsigned int> temp; 
             write(vect,argv[1],temp);
+        }
+        else {
+            cout<< "Le type de conteneurs est inconnu, pas de tri possible"<<endl;
         }
     }
 
@@ -175,6 +181,9 @@ int main(int argc, char** argv){
             list < float > temp; 
             write(vect,argv[1],temp);
         }
+        else {
+            cout<< "Le type de conteneurs est inconnu, pas de tri possible"<<endl;
+        }
     }
     // cas double 
     else if (vect[0][0]=='d'){
@@ -192,6 +201,9 @@ int main(int argc, char** argv){
             cout<< "on travaille avec list double  "<<endl;
             list <double> temp; 
             write(vect,argv[1],temp);
+        }
+        else {
+            cout<< "Le type de conteneurs est inconnu, pas de tri possible"<<endl;
         }
     }
     // cas char 
@@ -211,6 +223,9 @@ int main(int argc, char** argv){
             list<char> temp; 
             write(vect,argv[1],temp);
         }
+        else {
+            cout<< "Le type de conteneurs est inconnu, pas de tri possible"<<endl;
+        }
     }
     // cas string
     else if (vect[0][0]=='s'){
@@ -229,9 +244,12 @@ int main(int argc, char** argv){
             list<string> temp;
             write(vect,argv[1],temp);
         }
+        else {
+            cout<< "Le type de conteneurs est inconnu, pas de tri possible"<<endl;
+        }
     }
     else{
-        cout<<"error"<<endl;
+        cout<<"Le type d'identificateur de variable est inconnu, pas de tri possible"<<endl;
     }
 
     return 0;
